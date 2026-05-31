@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hooked Up Towing & Roadside Assistance | Whatcom County | 24/7 Towing</title>
+  <meta name="description" content="24/7 towing and roadside assistance in Whatcom County, WA. Serving Bellingham, Ferndale, Lynden, Blaine, Mount Vernon and beyond. Call now: (564) 213-6594">
+  <meta name="keywords" content="towing Bellingham WA, tow truck Whatcom County, roadside assistance Bellingham, 24 hour towing Bellingham, emergency towing Whatcom County, towing near me Bellingham">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Hooked Up Towing & Roadside Assistance | Whatcom County">
+  <meta property="og:description" content="24/7 towing anywhere in Whatcom County and beyond. One call, we come running.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://hookeduptowing.com">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Hooked Up Towing and Roadside Assistance",
+    "description": "24/7 towing and roadside assistance serving Whatcom County and surrounding areas",
+    "telephone": "+15642136594",
+    "areaServed": ["Whatcom County", "Bellingham", "Ferndale", "Lynden", "Blaine", "Birch Bay", "Everson", "Sumas", "Nooksack", "Sudden Valley", "Burlington", "Mount Vernon", "Anacortes"],
+    "availableLanguage": "English",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "serviceType": ["Towing", "Roadside Assistance", "Jump Start", "Tire Change", "Lockout Service", "Fuel Delivery", "Winch Out"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "WA",
+      "addressCountry": "US",
+      "addressLocality": "Whatcom County"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --yellow: #FFD000;
+      --yellow-dark: #e6b800;
+      --white: #ffffff;
+      --gray: #1a1a1a;
+      --gray-mid: #2d2d2d;
+      --gray-light: #888;
+      --red: #cc2200;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── EMERGENCY BANNER ── */
+    .emergency-bar {
+      background: var(--yellow);
+      color: var(--black);
+      text-align: center;
+      padding: 10px 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .emergency-bar a {
+      color: var(--black);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100svh;
+      background: var(--black);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 24px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,208,0,0.08) 0%, transparent 70%),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 60px,
+          rgba(255,208,0,0.015) 60px,
+          rgba(255,208,0,0.015) 61px
+        );
+      pointer-events: none;
+    }
+
+    .hook-icon {
+      font-size: 4rem;
+      margin-bottom: 16px;
+      display: block;
+      animation: sway 3s ease-in-out infinite;
+    }
+
+    @keyframes sway {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+    }
+
+    .hero-badge {
+      background: var(--yellow);
+      color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      padding: 6px 16px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .hero h1 {
+      font-family: 'Black Ops One', sans-serif;
+      font-size: clamp(2.8rem, 10vw, 6rem);
+      line-height: 0.95;
+      color: var(--white);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .hero h1 span {
+      color: var(--yellow);
+      display: block;
+    }
+
+    .hero-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-weight: 600;
+      color: var(--gray-light);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      margin-top: 12px;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 380px;
+    }
+
+    .btn-primary {
+      background: var(--yellow);
+      color: var(--black);
+      font-family: 'Black Ops One', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.04em;
+      padding: 20px 32px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      transition: transform 0.15s, background 0.15s;
+      box-shadow: 0 4px 24px rgba(255,208,0,0.3);
+    }
+
+    .btn-primary:hover {
+      background: var(--yellow-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--yellow);
+      color: var(--yellow);
+    }
+
+    .hero-note {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: var(--gray-light);
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--gray);
+      border-top: 1px solid rgba(255,208,0,0.15);
+      border-bottom: 1px solid rgba(255,208,0,0.15);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .trust-item span {
+      color: var(--yellow);
+      font-size: 1.1rem;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 70px 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: 'Black Ops One', sans-serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .service-card {
+      background: var(--gray);
+      border: 1px solid rgba(255,208,0,0.1);
+      border-radius: 6px;
+      padding: 24px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .service-card:hover {
+      border-color: var(--yellow);
+      transform: translateY(-3px);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: var(--yellow);
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--gray-light);
+      line-height: 1.5;
+    }
+
+    /* ── AREA ── */
+    .area-section {
+      background: var(--gray);
+      border-top: 1px solid rgba(255,208,0,0.1);
+      border-bottom: 1px solid rgba(255,208,0,0.1);
+    }
+
+    .cities-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .city-tag {
+      background: rgba(255,208,0,0.08);
+      border: 1px solid rgba(255,208,0,0.2);
+      color: var(--yellow);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 3px;
+    }
+
+    .area-note {
+      margin-top: 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    /* ── WHY ── */
+    .why-list {
+      list-style: none;
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .why-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .why-list li::before {
+      content: '✓';
+      color: var(--yellow);
+      font-family: 'Black Ops One', sans-serif;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── CTA BOTTOM ── */
+    .cta-bottom {
+      background: var(--yellow);
+      padding: 60px 24px;
+      text-align: center;
+    }
+
+    .cta-bottom h2 {
+      font-family: 'Black Ops One', sans-serif;
+      color: var(--black);
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .cta-bottom p {
+      color: rgba(0,0,0,0.7);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 28px;
+    }
+
+    .btn-dark {
+      background: var(--black);
+      color: var(--yellow);
+      font-family: 'Black Ops One', sans-serif;
+      font-size: 1.5rem;
+      padding: 20px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.15s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .btn-dark:hover { transform: translateY(-2px); }
+
+    .cta-backup {
+      margin-top: 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.95rem;
+      color: rgba(0,0,0,0.6);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #050505;
+      padding: 32px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,208,0,0.1);
+    }
+
+    footer p {
+      font-family: 'Barlow Condensed', sans-serif;
+      color: var(--gray-light);
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--yellow);
+      text-decoration: none;
+    }
+
+    /* ── PULSE ANIMATION ON CALL BTN ── */
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(255,208,0,0.5); }
+      70% { box-shadow: 0 0 0 16px rgba(255,208,0,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,208,0,0); }
+    }
+
+    .btn-primary { animation: pulse-ring 2.5s infinite; }
+  </style>
+</head>
+<body>
+
+  <!-- Emergency sticky bar -->
+  <div class="emergency-bar">
+    🚨 STUCK? CALL NOW → <a href="tel:+15642136594">(564) 213-6594</a> — 24/7 ANYWHERE IN WHATCOM COUNTY
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="hook-icon">🪝</span>
+    <div class="hero-badge">24/7 Towing &amp; Roadside Assistance</div>
+    <h1>Hooked Up<span>Towing</span></h1>
+    <p class="hero-sub">Whatcom County &amp; Beyond — We Go The Distance</p>
+    <div class="cta-group">
+      <a href="tel:+15642136594" class="btn-primary">📞 (564) 213-6594</a>
+      <a href="sms:+13602235444" class="btn-secondary">💬 Text Backup: (360) 223-5444</a>
+    </div>
+    <p class="hero-note">No job too far. No hour too late.</p>
+  </section>
+
+  <!-- Trust bar -->
+  <div class="trust-bar">
+    <div class="trust-item"><span>⚡</span> Fast Response</div>
+    <div class="trust-item"><span>🕐</span> 24/7 Available</div>
+    <div class="trust-item"><span>📍</span> Whatcom County</div>
+    <div class="trust-item"><span>🛣️</span> Long Distance OK</div>
+    <div class="trust-item"><span>⭐</span> Verified on Yelp</div>
+  </div>
+
+  <!-- Services -->
+  <section>
+    <p class="section-label">What We Do</p>
+    <h2>Every Tow.<br>Every Situation.</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">🚗</span>
+        <h3>Light Duty Towing</h3>
+        <p>Cars, trucks, SUVs. Broke down on the highway or stuck in a parking lot — we've got you.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🛣️</span>
+        <h3>Long Distance Towing</h3>
+        <p>Josh drives. Distance isn't an issue. We'll take your vehicle wherever it needs to go.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🔋</span>
+        <h3>Jump Starts</h3>
+        <p>Dead battery? We'll get you rolling fast so you're not sitting on the side of the road.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🔓</span>
+        <h3>Lockout Service</h3>
+        <p>Keys locked inside? We get you back in without the damage or the drama.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🛞</span>
+        <h3>Flat Tire Assist</h3>
+        <p>We'll swap your spare or tow you somewhere safe to get it handled.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">⛽</span>
+        <h3>Fuel Delivery</h3>
+        <p>Ran out of gas? We'll bring enough to get you to the nearest station.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🌲</span>
+        <h3>Off-Road Winch Out</h3>
+        <p>Stuck in mud, snow, or a ditch? We'll pull you out and get you back on the road.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🚨</span>
+        <h3>Accident Recovery</h3>
+        <p>Fender bender or worse — we'll clear the scene safely and get your vehicle moved.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <div class="area-section">
+    <section>
+      <p class="section-label">Service Area</p>
+      <h2>We Cover Whatcom County — And Then Some</h2>
+      <div class="cities-list">
+        <span class="city-tag">Bellingham</span>
+        <span class="city-tag">Ferndale</span>
+        <span class="city-tag">Lynden</span>
+        <span class="city-tag">Blaine</span>
+        <span class="city-tag">Birch Bay</span>
+        <span class="city-tag">Everson</span>
+        <span class="city-tag">Sumas</span>
+        <span class="city-tag">Nooksack</span>
+        <span class="city-tag">Sudden Valley</span>
+        <span class="city-tag">Lummi Island</span>
+        <span class="city-tag">Birch Bay</span>
+        <span class="city-tag">Burlington</span>
+        <span class="city-tag">Mount Vernon</span>
+        <span class="city-tag">Anacortes</span>
+        <span class="city-tag">Skagit County</span>
+      </div>
+      <p class="area-note">📍 Josh is a marathon driver. If you need it towed — he'll go there.</p>
+    </section>
+  </div>
+
+  <!-- Why Us -->
+  <section>
+    <p class="section-label">Why Call Us</p>
+    <h2>We Show Up.<br>That's The Job.</h2>
+    <ul class="why-list">
+      <li>Available 24 hours a day, 7 days a week — including holidays</li>
+      <li>Will travel outside Whatcom County for long-distance tows</li>
+      <li>Honest pricing — no surprise fees when we arrive</li>
+      <li>Verified on Yelp as Hooked Up Towing and Roadside Assistance</li>
+      <li>One call gets you a real person, not a call center</li>
+      <li>Fast response — we move when you call</li>
+    </ul>
+  </section>
+
+  <!-- Bottom CTA -->
+  <div class="cta-bottom">
+    <h2>Stranded?<br>Call Now.</h2>
+    <p>Available 24/7 — Whatcom County and Beyond</p>
+    <a href="tel:+15642136594" class="btn-dark">📞 (564) 213-6594</a>
+    <p class="cta-backup">Text backup (no calls): (360) 223-5444</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <strong style="color:var(--yellow); font-family:'Black Ops One',sans-serif;">HOOKED UP TOWING</strong><br>
+      Towing &amp; Roadside Assistance · Whatcom County, WA<br>
+      <a href="tel:+15642136594">(564) 213-6594</a> · 
+      <a href="sms:+13602235444">Text: (360) 223-5444</a><br><br>
+      Serving Bellingham, Ferndale, Lynden, Blaine, Birch Bay, Everson, Sumas, Nooksack, Anacortes &amp; surrounding areas<br>
+      <span style="color:rgba(255,255,255,0.3); font-size:0.75rem;">© 2026 Hooked Up Towing and Roadside Assistance</span>
+    </p>
+  </footer>
+
+</body>
+</html>
